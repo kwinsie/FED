@@ -38,11 +38,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   https://www.foam.org/nl
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home<br>
+  Home
   <img src="readme-images/Homepage.jpeg" width="375px" alt="Beginscherm op mobiel">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Magazine<br>
+  Magazine
   <img src="readme-images/magazine.jpeg" width="375px" alt="Magazine scherm op mobiel">
  
 </details>
