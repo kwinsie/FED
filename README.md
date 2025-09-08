@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  surface plane
+  Beetje van beide
  
 </details>
 
@@ -42,8 +42,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Homepage.jpeg" width="375px" alt="Beginscherm op mobiel">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Magazine
-  <img src="readme-images/magazine.jpeg" width="375px" alt="Magazine scherm op mobiel">
+  Plan je bezoek
+  <img src="readme-images/Plan_je_bezoek.jpeg" width="375px" alt="Plan je bezoek scherm op mobiel">
  
 </details>
 
