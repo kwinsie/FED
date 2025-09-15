@@ -56,6 +56,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - hyrargie (h1,h2,h3) is niet goed
+    - Meerdere H1 per pagina
+    - Volgorde is verkeerd
+
+  - H1 veranderd soms met java, wardoor de screenreader hem raar leest
+  - De taal veranderd soms wanneer het niet nodig is
+  - Links als see more, beloning zijn onduidelijk
 
 </details>
 
