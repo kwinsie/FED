@@ -5,8 +5,31 @@
   box-sizing:border-box;  
 }
 
+@font-face {
+	font-family: 'Foam sans-serif';
+	src: url('../Fonts/Foam\ sans-serif.woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Foam sans-serif';
+	src: url('../Fonts/Foam\ sans-serif\ cursief.woff2');
+	font-weight: normal;
+	font-style: italic;
+}
 
-
+@font-face {
+	font-family: 'Foam serif';
+	src: url('../Fonts/Foam\ serif.woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Foam serif';
+	src: url('../Fonts/Foam\ sans-serif\ cursief.woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 
@@ -15,8 +38,11 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text-main:#000;
+	--color-text-second:#FFF;
+	--color-background-main:#FFF;
+	--color-background-second:#000;
+	--color-background-nav:#E30614;
 }
 
 
@@ -29,3 +55,86 @@
 
 /* jouw code */
 
+body {
+	background-color: var(--color-background-main);
+	font-family: Foam sans-serif, sans-serif;
+}
+
+body img{
+	width: 90%;
+}
+
+header {
+	margin: 1em;
+	display: grid;
+	grid-gap: .5em;
+}
+
+
+header nav:nth-of-type(1) {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background-color: var(--color-background-nav);
+}
+
+header nav:nth-of-type(1) a {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	justify-self: center;
+	align-self: center;
+	margin: .5em;
+}
+
+header nav button:nth-of-type(1) {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	justify-self: start;
+	align-self: center;
+	margin: .5em;
+	width: 2.5em;
+	height: 2.5em;
+}
+
+header nav button:nth-of-type(2) {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	justify-self: end;
+	align-self: center;
+	margin: .5em;
+	width: 2.5em;
+	height: 2.5em;
+}
+
+header nav svg:nth-of-type(1) {
+	height: 2em;
+}
+
+header nav svg:nth-of-type(1) path {
+	fill: var(--color-text-second);
+}
+
+header nav:nth-of-type(2) {
+	background-color: var(--color-background-main);
+}
+
+header nav ul:nth-of-type(1) {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header nav ul:nth-of-type(1) a {
+	text-decoration: none;
+	color: var(--color-text-main);
+	justify-self: center;
+	align-self: center;
+}
+
+header nav ul:nth-of-type(1) li {
+	justify-self: center;
+	align-self: center;
+	border-style: solid;
+}

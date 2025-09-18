@@ -94,17 +94,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Opzetten van de html van de eerste pagina ging redelijk goed, vooral door de breakdownschets. Ik merk alleen dat ik nog wat moeite heb met 
+  de volgorde van de regels, bijv. na de h2 een img of eerst de p ivm toegankelijkheid. Ook weet ik niet meer zo goed hoe ik een border       
+  toevoeg aan bepaalde elementen van mijn nav.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Quincy            |                    | student 3    | student 4        | student 5       |
+  | ---               | ---                | ---          | ---              | ---             |
+  | Volgorde van HTML | en dit             | en ik dit    | en dan ik dat    | en dan ik dit   |
+  | CSS border van li | dit als er tijd is | nog een punt | dit wil ik zeker | dit wil ik ook  |
+  | ...               | ...                | ...          | ...              | .....           |
 
 
   ### Verslag van meeting
