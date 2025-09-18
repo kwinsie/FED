@@ -102,11 +102,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Quincy            |                    | student 3    | student 4        | student 5       |
-  | ---               | ---                | ---          | ---              | ---             |
-  | Volgorde van HTML | en dit             | en ik dit    | en dan ik dat    | en dan ik dit   |
-  | CSS border van li | dit als er tijd is | nog een punt | dit wil ik zeker | dit wil ik ook  |
-  | ...               | ...                | ...          | ...              | .....           |
+  | Quincy            |                    | Quinten                                   | student 4        | Zakaria Yatim   |
+  | ---               | ---                | ---                                       | ---              | ---             |
+  | Volgorde van HTML | en dit             | Image achter tekst                        | en dan ik dat    | Ziek :(         |
+  | CSS border van li | dit als er tijd is | List style nie aanpasbaar bij "see more"  | dit wil ik zeker |                 |
+  | ...               | ...                | Nth-of-type(0) lukt niet altijd           | ...              |                 |
+  |                   |                    | Elementen omdraaien                       |   
+  |                   |                    | "see more" (about fish) verstoppen.       |
+  |                   |                    | Link om h3 heen                           |
+  |                   |                    | Border color gold werkt niet op de a en   |
+  |                   |                    |button borders krijg ik niet weg op de nav |
 
 
   ### Verslag van meeting
