@@ -97,20 +97,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Opzetten van de html van de eerste pagina ging redelijk goed, vooral door de breakdownschets. Ik merk alleen dat ik nog wat moeite heb met 
   de volgorde van de regels, bijv. na de h2 een img of eerst de p ivm toegankelijkheid. Ook weet ik niet meer zo goed hoe ik een border       
   toevoeg aan bepaalde elementen van mijn nav.
+  <img src="readme-images/Scherm­afbeelding code week 1 inspringen.png" width="375px" alt="schermafbeelding van de inspringingen van mijn code">
+  <img src="readme-images/Scherm­afbeelding code week 1 volgorde.png" width="375px" alt="schermafbeelding van de volgorde van mijn code">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Quincy            |                    | Quinten                                                                             | student 4        | Zakaria Yatim   |
-  | ---               | ---                | ---                                                                                 | ---              | ---             |
-  | Volgorde van HTML | en dit             | Image achter tekst                                                                  | en dan ik dat    | Ziek :(         |
-  | CSS border van li | dit als er tijd is | List style nie aanpasbaar bij "see more"                                            | dit wil ik zeker |                 |
-  | ...               | ...                | Nth-of-type(0) lukt niet altijd                                                     | ...              |                 |
-  |                   |                    | Elementen omdraaien                                                                 |   
-  |                   |                    | "see more" (about fish) verstoppen.                                                 |
-  |                   |                    | Link om h3 heen                                                                     |
-  |                   |                    | Border color gold werkt niet op de a en button borders krijg ik niet weg op de nav  |
+  | Quincy            | Beyzanur            | Quinten                                                                             | Ilias.                            | Zakaria Yatim |
+  | ---               | ---                 | ---                                                                                 | ---                               | ---           |
+  | Volgorde van HTML | nav menu            | Image achter tekst                                                                  | Algemene feedback op HTML         | Ziek :(       |
+  | CSS border van li | HTML elementen/tags | List style nie aanpasbaar bij "see more"                                            | Wanneer list/article te gebruiken |               |
+  | ...               | Fonts               | Nth-of-type(0) lukt niet altijd                                                     | Wanneer wel/geen section          |               |
+  |                   |                     | Elementen omdraaien                                                                 |   
+  |                   |                     | "see more" (about fish) verstoppen.                                                 |
+  |                   |                     | Link om h3 heen                                                                     |
+  |                   |                     | Border color gold werkt niet op de a en button borders krijg ik niet weg op de nav  |
 
 
 
