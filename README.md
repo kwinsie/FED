@@ -97,6 +97,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Opzetten van de html van de eerste pagina ging redelijk goed, vooral door de breakdownschets. Ik merk alleen dat ik nog wat moeite heb met 
   de volgorde van de regels, bijv. na de h2 een img of eerst de p ivm toegankelijkheid. Ook weet ik niet meer zo goed hoe ik een border       
   toevoeg aan bepaalde elementen van mijn nav.
+  
   <img src="readme-images/Scherm­afbeelding code week 1 inspringen.png" width="375px" alt="schermafbeelding van de inspringingen van mijn code">
   <img src="readme-images/Scherm­afbeelding code week 1 volgorde.png" width="375px" alt="schermafbeelding van de volgorde van mijn code">
 
