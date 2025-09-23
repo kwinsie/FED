@@ -97,7 +97,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Opzetten van de html van de eerste pagina ging redelijk goed, vooral door de breakdownschets. Ik merk alleen dat ik nog wat moeite heb met 
   de volgorde van de regels, bijv. na de h2 een img of eerst de p ivm toegankelijkheid. Ook weet ik niet meer zo goed hoe ik een border       
   toevoeg aan bepaalde elementen van mijn nav.
-  
+
   <img src="readme-images/Scherm­afbeelding code week 1 inspringen.png" width="375px" alt="schermafbeelding van de inspringingen van mijn code">
   <img src="readme-images/Scherm­afbeelding code week 1 volgorde.png" width="375px" alt="schermafbeelding van de volgorde van mijn code">
 
@@ -120,10 +120,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ul maken van de lijsten bij bijvoorbeeld nu te zien
+  - lang element toevoegen aan dingen die in een andere taal staan.
+  - aleen children springen in, als ik duidelijkheid wil kan ik ook een witregel gebruiken.
+  - enkel laag nav, niet meer uitwerken dan dat
+  - 3 style sheets 1 voor algemeen en 1 per pagina.
+  - search bar staat in een search section en een form
+  - alt alleen als het plaatje zelf informatie is
+  - als je de witruimte onder de img weg wil hebben doe je img{ display:block; }
+  - a11y hide content
+  - padding op a :) met  display:block; omdat het inline is
 
 </details>
 
