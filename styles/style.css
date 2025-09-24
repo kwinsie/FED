@@ -39,10 +39,6 @@ video {
 	width: 100%;
 }
 
-svg {
-	width: 10%;
-}
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -68,80 +64,102 @@ svg {
 body {
 	background-color: var(--color-background-main);
 	font-family: Foam sans-serif, sans-serif;
+	margin: 0;
 }
 
 header {
-	margin: 1em;
-	display: grid;
-	grid-gap: .5em;
+	margin: 1.5em;
 	background-color: var(--color-background-nav);
+	display: flex;
+	flex-wrap: wrap;
+}
+  
+header svg {
+	height: 1.6em;
+	width: 100%;
+	color: var(--color-text-second);
+}
+  
+header > :nth-child(1) {
+	flex: 1;
+	order: 2; 
+	align-self: center;
+}
+  
+header > :nth-child(2) {
+	margin: .7em;
+	width: 2.5em;
+	height: 2.5em;
+	flex: auto 0 0;
+	order: 1; 
+}
+  
+header > :nth-child(3) {
+	margin: .7em;
+	width: 2.5em;
+	height: 2.5em;
+	flex: 0 0 auto;
+	order: 3;
 }
 
-nav{
+header > :nth-child(4) {
+	flex: 1 1 100%;
+	order: 4;
+	display: flex;
+	flex-direction: column;
+}
+  
+header > :nth-child(n+5) {
+	flex: 1 1 100%;
+	order: 5;
+	
+}
+/* bron:https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+
+
+header ul {
+	list-style: none;
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-top: 2em;
+	margin: 0;
+}
+
+header nav svg {
+	width: 1em ;
+	height: 1ch;
+}
+
+header nav a {
+	text-decoration: none;
+	color: var(--color-text-second);
+	font-size: 1.8em;
 	
 }
 
-/* header nav:nth-of-type(1) {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	background-color: var(--color-background-nav);
+header nav > :nth-child(5) {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1em;
+	
 }
 
-header nav:nth-of-type(1) a {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	justify-self: center;
-	align-self: center;
-	margin: .5em;
+header nav ul:nth-of-type(4) svg {
+	height: .8em;
 }
 
-header nav button:nth-of-type(1) {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	justify-self: start;
-	align-self: center;
-	margin: .5em;
-	width: 2.5em;
-	height: 2.5em;
-}
-
-header nav button:nth-of-type(2) {
-	grid-column-start: 4;
-	grid-column-end: 5;
-	grid-row-start: 1;
-	justify-self: end;
-	align-self: center;
-	margin: .5em;
-	width: 2.5em;
-	height: 2.5em;
-}
-
-header nav svg:nth-of-type(1) {
-	height: 2em;
-}
-
-header nav:nth-of-type(2) {
-	background-color: var(--color-background-main);
-}
-
-header nav ul:nth-of-type(1) {
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-header nav ul:nth-of-type(1) a {
-	text-decoration: none;
-	color: var(--color-text-main);
-	justify-self: center;
-	align-self: center;
-}
-
-header nav ul:nth-of-type(1) li {
-	justify-self: center;
-	align-self: center;
+header nav > a {
+	font-size: .8em;
+	border-radius: 45px;
 	border-style: solid;
-} */
+	border-width: 1px;
+	padding-left: .9em;
+	padding-right: .9em;
+	padding-bottom: .4em;
+	padding-top: .4em;
+	margin-top: 1em;
+	align-self: center;
+}
+
 
