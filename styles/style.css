@@ -67,11 +67,13 @@ body {
 	margin: 0;
 }
 
-header {
-	margin: 1.5em;
+header { 
 	background-color: var(--color-background-nav);
+	margin: 1em;
 	display: flex;
 	flex-wrap: wrap;
+	position: fixed;
+
 }
   
 header svg {
