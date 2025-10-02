@@ -5,32 +5,6 @@
   box-sizing:border-box;  
 }
 
-@font-face {
-	font-family: 'Foam sans-serif';
-	src: url('../Fonts/Foam\ sans-serif.woff2');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Foam sans-serif';
-	src: url('../Fonts/Foam\ sans-serif\ cursief.woff2');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Foam serif';
-	src: url('../Fonts/Foam\ serif.woff2');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Foam serif';
-	src: url('../Fonts/Foam\ sans-serif\ cursief.woff2');
-	font-weight: normal;
-	font-style: normal;
-}
-
 img {
 	width: 100%;
 }
@@ -38,6 +12,43 @@ img {
 video {
 	width: 100%;
 }
+
+
+
+
+
+/**************/
+/* font-face */
+/**************/
+@font-face {
+	font-family: 'Foam sans-serif';
+	src: url('../fonts/sans-serif.woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Foam sans-serif';
+	src: url('../fonts/sans-serif-cursief.woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Foam serif';
+	src: url('../fonts/serif.woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Foam serif';
+	src: url('../fonts/serif-cursief.woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -55,29 +66,38 @@ video {
 
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
+/********/
+/* body */
+/********/
 
 body {
 	background-color: var(--color-background-main);
-	font-family: Foam sans-serif, sans-serif;
+	font-family: "Foam sans-serif", sans-serif;
 	margin: 0;
+	-webkit-font-smoothing: antialiased;
 }
+
+
+
+
+
+/**********/
+/* header */
+/**********/
 
 header { 
 	background-color: var(--color-background-nav);
-	margin: 1em;
+	margin: 1.2rem;
 	display: flex;
 	flex-wrap: wrap;
-	position: fixed;
+	position: sticky;
+	top: 1rem;
+	z-index: 1000;
 
 }
   
 header svg {
-	height: 1.6em;
+	height: 1.8rem;
 	width: 100%;
 	color: var(--color-text-second);
 }
@@ -88,18 +108,61 @@ header > :nth-child(1) {
 	align-self: center;
 }
   
-header > :nth-child(2) {
-	margin: .7em;
-	width: 2.5em;
-	height: 2.5em;
-	flex: auto 0 0;
-	order: 1; 
+header > button:nth-child(2) {
+	margin: .7rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	flex: 0 0 auto;
+	order: 1;
+	appearance: none;
+	border: none; 
+	background: none;
+	display: grid;
+	justify-content: center;
+	align-content: center;
 }
+
+button span {
+	display: block;
+	width: 1.5rem;
+	height: .13rem;
+	background-color: var(--color-text-second);
   
-header > :nth-child(3) {
-	margin: .7em;
-	width: 2.5em;
-	height: 2.5em;
+  	grid-column-start: 1;
+  	grid-row-start: 1;
+  
+  	transition: .3s;
+}
+
+button:hover span{
+	width: 1.8rem;
+	transition: .3s;
+}
+
+button span:nth-of-type(1) {
+	translate: 0 -.25rem ;
+}
+
+button.is-open span:nth-of-type(1) {
+	translate: 0em  ;
+	rotate: 45deg;
+}
+
+button span:nth-of-type(2) {
+	translate: 0 .25rem ;
+  
+  }
+  
+button.is-open span:nth-of-type(2) {
+	translate: 0em  ;
+	rotate: -45deg;
+  }
+  
+
+header > button:nth-child(3) {
+	margin: .7rem;
+	width: 2.5rem;
+	height: 2.5rem;
 	flex: 0 0 auto;
 	order: 3;
 }
@@ -109,33 +172,40 @@ header > :nth-child(4) {
 	order: 4;
 	display: flex;
 	flex-direction: column;
+
 }
-  
+
+
+
+
+
+/**************/
+/* header nav */
+/**************/
+
 header > :nth-child(n+5) {
 	flex: 1 1 100%;
 	order: 5;
 	
 }
-/* bron:https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
-
 
 header ul {
 	list-style: none;
-	padding-left: 3em;
-	padding-right: 3em;
-	padding-top: 2em;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 2rem;
 	margin: 0;
 }
 
 header nav svg {
-	width: 1em ;
-	height: 1ch;
+	height: 1.2rem;
+	width: auto;
 }
 
 header nav a {
 	text-decoration: none;
 	color: var(--color-text-second);
-	font-size: 1.8em;
+	font-size: 1.5rem;
 	
 }
 
@@ -143,25 +213,80 @@ header nav > :nth-child(5) {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap: 1em;
+	gap: 1.5rem;
 	
 }
 
-header nav ul:nth-of-type(4) svg {
-	height: .8em;
-}
-
 header nav > a {
-	font-size: .8em;
+	font-size: .8rem;
 	border-radius: 45px;
 	border-style: solid;
 	border-width: 1px;
-	padding-left: .9em;
-	padding-right: .9em;
-	padding-bottom: .4em;
-	padding-top: .4em;
-	margin-top: 1em;
+	padding-left: .9rem;
+	padding-right: .9rem;
+	padding-bottom: .4rem;
+	padding-top: .4rem;
+	margin-top: 1rem;
 	align-self: center;
 }
 
+header nav {
+	transition: max-height .3s ease;
+	overflow: hidden;
+	max-height: 0;
+}
+
+nav.is-visible {
+	max-height: 50rem;
+  }
+
+header nav:nth-of-type(2) {
+	position: relative;
+	overflow: visible;
+}
+
+
+
+
+
+/*****************/
+/* header search */
+/*****************/
+
+header search {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 1rem;
+}
+
+header form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header input {
+	width: 100%;
+	height: 2rem;
+	font-size: 1rem;
+	background: none;
+	border: none;
+	color: var(--color-text-second);
+
+}
+
+input::placeholder {
+	color: var(--color-text-second);
+	opacity: 1; 
+	font-size: 1.5rem;
+  }
+
+  header form button {
+	background: none;
+	border: none;
+	height: 2rem;
+	width: auto;
+  }
 
