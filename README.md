@@ -105,7 +105,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Quincy            | Beyzanur            | Quinten                                                                             | Ilias.                            | Zakaria Yatim |
+  | Quincy            | Beyzanur            | Quinten                                                                             | Ilias.                            | Zakaria |
   | ---               | ---                 | ---                                                                                 | ---                               | ---           |
   | Volgorde van HTML | nav menu            | Image achter tekst                                                                  | Algemene feedback op HTML         | Ziek :(       |
   | CSS border van li | HTML elementen/tags | List style nie aanpasbaar bij "see more"                                            | Wanneer list/article te gebruiken |               |
@@ -143,17 +143,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb tot nu vooral aan mijn header gewerkt, het ging over het algemeen best goed. Het positioneren met flexbox en grid en het stijlen van de rest van de content ging goed. Ik heb ook een beetje met javascript gewerkt voor mijn menu en dat werkt voor zo ver ik ben gekomen. Het enige waar ik voor nu tegenaan loop is position sticky, de nav beweegt over het scherm zoals ik wil, maar wanneer ik mijn menu open, beweegt mijn hele pagina omlaag. Ook weet ik nog niet helemaal hoe ik er voor moet zorgen dat mijn menu inklapt als ik mijn search aandruk en hoe ik mijn form in de search stijl mbt het kruisje dat er in ontstaat.
 
+<img src="readme-images/Nav open foto 02-10.jpeg" width="375px" alt="schermafbeelding van de navigatie open">
+<img src="readme-images/Nav partly closed foto 02-10.jpeg" width="375px" alt="schermafbeelding van de navigatie dicht en de site die mee scrollt">
+<img src="readme-images/Search foto 02-10.jpeg" width="375px" alt="schermafbeelding van de mijn search bar kruisje">
+<img src="readme-images/Javascript foto 02-10.jpeg" width="375px" alt="schermafbeelding van de javascript voor mijn menu">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Quincy      | Beyzanur         | Quinten    | Ilias        | Zakaria  |
+  | ---         | ---              | ---        | ---          | ---       |
+  | Position sticky  | Positioneren list             | Horizontal scrol door image   | Foto resizen    | Flexbox          |
+  | Java zoek button | Stijlen hamburger | Responsive | ... |...           |
+  | Stijlen form           | ...                | Figcaptions          | ...              | ...           |
 
 
   ### Verslag van meeting
