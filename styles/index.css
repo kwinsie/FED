@@ -70,4 +70,5 @@ main section:nth-of-type(1) a {
     padding: .8rem;
     color: var(--color-text-second);
     background-color: var(--color-background-second);
+    font-size: .9rem;
 }
