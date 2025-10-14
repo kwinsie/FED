@@ -9,10 +9,6 @@ img {
 	width: 100%;
 }
 
-video {
-	width: 100%;
-}
-
 
 
 
@@ -57,6 +53,10 @@ video {
 	/* startje */
 	--color-text-main:#000;
 	--color-text-second:#FFF;
+
+	--color-border-gray: #A6A6A6;
+	--color-border-black: #000;
+
 	--color-background-main:#FFF;
 	--color-background-second:#000;
 	--color-background-nav:#E30614;
@@ -91,13 +91,13 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	position: sticky;
-	top: 1rem;
+	top: 1.2rem;
 	z-index: 1000;
 
 }
   
 header svg {
-	height: 1.8rem;
+	height: 1.7rem;
 	width: 100%;
 	color: var(--color-text-second);
 }
@@ -109,9 +109,9 @@ header > :nth-child(1) {
 }
   
 header > button:nth-child(2) {
-	margin: .7rem;
-	width: 2.5rem;
-	height: 2.5rem;
+	margin: .5rem;
+	width: 2.1rem;
+	height: 2.1rem;
 	flex: 0 0 auto;
 	order: 1;
 	appearance: none;
@@ -122,7 +122,7 @@ header > button:nth-child(2) {
 	align-content: center;
 }
 
-button span {
+header > button:nth-child(2) span {
 	display: block;
 	width: 1.5rem;
 	height: .13rem;
@@ -134,38 +134,98 @@ button span {
   	transition: .3s;
 }
 
-button:hover span{
+header > button:nth-child(2):hover span{
 	width: 1.8rem;
-	transition: .3s;
 }
 
-button span:nth-of-type(1) {
+header > button:nth-child(2) span:nth-of-type(1) {
 	translate: 0 -.25rem ;
 }
 
-button.is-open span:nth-of-type(1) {
-	translate: 0em  ;
+header > button:nth-child(2).is-open span:nth-of-type(1) {
+	translate: 0;
 	rotate: 45deg;
 }
 
-button span:nth-of-type(2) {
+header > button:nth-child(2) span:nth-of-type(2) {
 	translate: 0 .25rem ;
   
   }
   
-button.is-open span:nth-of-type(2) {
-	translate: 0em  ;
+header > button:nth-child(2).is-open span:nth-of-type(2) {
+	translate: 0;
 	rotate: -45deg;
   }
   
 
 header > button:nth-child(3) {
-	margin: .7rem;
-	width: 2.5rem;
-	height: 2.5rem;
+	margin: .5rem;
+	width: 2.1rem;
+	height: 2.1rem;
 	flex: 0 0 auto;
 	order: 3;
+	appearance: none;
+	border: none; 
+	background: none;
+	display: grid;
+	justify-content: center;
+	align-content: center;
 }
+
+
+header > button:nth-child(3) span:nth-of-type(1){
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border: 2px solid var(--color-text-second);
+	border-radius: 50%;
+	background: none;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	transition: 0.3s;
+}
+
+header > button:nth-child(3):hover span:nth-of-type(1) {
+	width: .8rem;
+	height: .8rem;
+}
+
+header > button:nth-child(3).is-open span:nth-of-type(1) {
+	width: 1.5rem;
+	height: .13rem;
+	rotate: -45deg;
+	border: none;
+	border-radius: 0;
+	background-color: var(--color-text-second);
+}
+
+header > button:nth-child(3) span:nth-of-type(2){
+	position: relative;
+	width: 0.6rem;
+	height: 0.15rem;
+	background-color: var(--color-text-second);
+	left: 0.7rem;
+	rotate: 45deg;
+	transition: 0.3s;
+}
+
+header > button:nth-child(3):hover span:nth-of-type(2) {
+	width: .8rem;
+	left: .46rem;
+}
+
+header > button:nth-child(3).is-open span:nth-of-type(2) {
+	width: 1.5rem;
+	height: .13rem;
+	background-color: var(--color-text-second);
+	left: 0;
+	top: -.1rem;
+}
+
+
+/**************/
+/* header main nav */
+/**************/
 
 header > :nth-child(4) {
 	flex: 1 1 100%;
@@ -175,18 +235,9 @@ header > :nth-child(4) {
 
 }
 
-
-
-
-
-/**************/
-/* header nav */
-/**************/
-
 header > :nth-child(n+5) {
 	flex: 1 1 100%;
 	order: 5;
-	
 }
 
 header ul {
@@ -214,6 +265,7 @@ header nav > :nth-child(5) {
 	flex-direction: row;
 	justify-content: center;
 	gap: 1.5rem;
+	padding-bottom: 2rem;
 	
 }
 
@@ -231,22 +283,21 @@ header nav > a {
 }
 
 header nav {
-	transition: max-height .3s ease;
+	position: absolute;              
+	top: 100%;                       
+	left: 0;
+	right: 0;
+	background-color: var(--color-background-nav);
+
 	overflow: hidden;
 	max-height: 0;
+	transition: max-height .3s ease;
+	z-index: 999; 
 }
 
 nav.is-visible {
-	max-height: 50rem;
+	max-height: 60rem;
   }
-
-header nav:nth-of-type(2) {
-	position: relative;
-	overflow: visible;
-}
-
-
-
 
 
 /*****************/
@@ -254,10 +305,20 @@ header nav:nth-of-type(2) {
 /*****************/
 
 header search {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	padding: 1rem;
+	position: absolute;              
+	top: 100%;                       
+	left: 0;
+	right: 0;
+	background-color: var(--color-background-nav);
+
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height .3s ease;
+	z-index: 999; 
+}
+
+search.is-visible {
+	max-height: 60rem;
 }
 
 header form {
@@ -265,6 +326,7 @@ header form {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 1rem;
 }
 
 header input {
@@ -281,12 +343,43 @@ input::placeholder {
 	color: var(--color-text-second);
 	opacity: 1; 
 	font-size: 1.5rem;
-  }
+}
 
-  header form button {
+header form button {
 	background: none;
 	border: none;
 	height: 2rem;
 	width: auto;
-  }
+}
 
+
+/*********************/
+/* header second nav */
+/*********************/
+
+header nav:nth-of-type(2) {
+	position: relative;
+	overflow: visible;
+	z-index: 998;
+}
+
+header nav:nth-of-type(2) ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding-left: 1px;
+	padding-top: .5rem;
+	padding-right: 1px;
+}
+
+header nav:nth-of-type(2) li {
+	background-color: var(--color-background-main);
+	outline: 1px solid var(--color-border-gray);
+	padding-top: .7rem;
+	padding-bottom: .7rem;
+	text-align: center;
+}
+
+header nav:nth-of-type(2) a {
+	color: var(--color-text-main);
+	font-size: 1rem;
+}
