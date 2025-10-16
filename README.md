@@ -194,17 +194,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ben vooral beig geweest met JS en dat gaat na veel trial en error best goed, het ene menu moest open en dan moest het andere op hetzelfde moment dicht. verder veel styling, maar ik had meer willen doen.
+
+  <img src="readme-images/js menu.jpeg" width="375px" alt="schermafbeelding van de javascript voor mijn menu">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Quincy      | Beyzanur         | Quinten    | Ilias        | Zakaria  |
+  | ---         | ---              | ---        | ---          | ---       |
+  | Hamburger menu timing  | hamburger | tweede ul aanspreken  | divss    |      |
+  | wanneer span | margin 0 | streepjes bij see more| ... |...           |
+  | tijdens scrollen kleur veranderen           | search bar      | Figcaptions          | ...              | ...           |
 
 
   ### Verslag van meeting
