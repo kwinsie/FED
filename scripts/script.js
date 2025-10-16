@@ -1,6 +1,11 @@
 // JavaScript Document
 console.log("hi");
 
+
+//*******************************************//
+// Openen en sluiten van hamburger en search //
+//*******************************************//
+
 let hamburgerButton = document.querySelector("header > button:nth-child(2)"); 
 let nav = document.querySelector("header nav"); 
 
@@ -10,11 +15,18 @@ let search = document.querySelector("header search");
 hamburgerButton.addEventListener("click", toggleButton); 
 
 function toggleButton () {
+    let searchIsOpen = searchButton.classList.contains("is-open")
+
+    if (searchIsOpen) {
+        search.classList.remove("is-visible");
+        searchButton.classList.remove("is-open");
+        searchButton.setAttribute("aria-expanded", false);
+    }
 
     hamburgerButton.classList.toggle("is-open"); 
     nav.classList.toggle("is-visible"); 
 
-    const hamburgerIsExpanded = hamburgerButton.classList.contains("is-open"); 
+    let hamburgerIsExpanded = hamburgerButton.classList.contains("is-open"); 
     hamburgerButton.setAttribute("aria-expanded", hamburgerIsExpanded); 
 
 } 
@@ -22,22 +34,42 @@ function toggleButton () {
 searchButton.addEventListener("click", toggleSearch); 
 
 function toggleSearch (){ 
+    let hamburgerIsOpen = hamburgerButton.classList.contains("is-open")
+
+    if (hamburgerIsOpen) {
+        nav.classList.remove("is-visible");
+        hamburgerButton.classList.remove("is-open");
+        hamburgerButton.setAttribute("aria-expanded", false);
+    }
+
+
     searchButton.classList.toggle("is-open");
     search.classList.toggle("is-visible"); 
 
-    const searchIsExpanded = searchButton.classList.contains("is-open"); 
+    let searchIsExpanded = searchButton.classList.contains("is-open"); 
     searchButton.setAttribute("aria-expanded", searchIsExpanded); 
 }
 
-const deVideo = document.querySelector("video");
-const deVideoButton = document.querySelector("main section:nth-of-type(1) button");
+//*************************//
+// Video starten en stoppen//
+//*************************//
 
-deVideoButton.onclick = toggleVideo;
+let deVideo = document.querySelector("video");
+let playButton = document.querySelector("main section:nth-of-type(1) button");
+let pauseButton = document.querySelector("main section:nth-of-type(1) button:nth-last-of-type(1)");
+
+playButton.addEventListener ("click", toggleVideo);
+pauseButton.addEventListener ("click", toggleVideo);
 
 function toggleVideo() {
-    if(deVideo.paused){
+    if (deVideo.paused) {
         deVideo.play();
-    }else{
+        playButton.classList.add("visually-hidden")
+        pauseButton.classList.remove("visually-hidden")
+    } else {
         deVideo.pause();
+        playButton.classList.remove("visually-hidden")
+        pauseButton.classList.add("visually-hidden")
     }
 }
+
