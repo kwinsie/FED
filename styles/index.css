@@ -4,7 +4,7 @@
 /********/
 
 main {
-    padding-top: 2.3rem;
+    padding-top: 7.5rem;
 }
 
 
@@ -13,7 +13,7 @@ main {
 /*************/
 
 main section:nth-of-type(1) {
-    margin-left: 1.2rem;
+    margin-left: .8rem;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -21,6 +21,7 @@ main section:nth-of-type(1) {
 main section:nth-of-type(1) h1 {
     font-family: "Foam serif", serif;
     font-weight: 100;
+    color: var(--color-text-main);
     font-size: min(2.25rem, 9.6vw);
     line-height: 100%;
     grid-column-start: 1;
@@ -87,8 +88,23 @@ main section:nth-of-type(1) a {
     padding: .8rem;
     color: var(--color-text-second);
     background-color: var(--color-background-second);
+    border-style: solid;
+    border-color: var(--color-background-second);
+    border-width: 1px;
+    transition: 0.3s;
+    
 }
 
+main section:nth-of-type(1) a:hover {
+    color: var(--color-text-main);
+    background-color: var(--color-background-main);
+    border-color: var(--color-border-black);
+}
+
+main section:nth-of-type(1) a::selection {
+	background-color: var(--color-background-main); 
+	color: var(--color-text-main);    
+  }
 
 /*************/
 /* section 2 */
@@ -98,7 +114,7 @@ main section:nth-of-type(2) {
     background-color: var(--color-background-second);
     color: var(--color-text-second);
     margin-top: 2rem;
-    padding-left: 1.2rem;
+    padding-left: .9rem;
     display: flex;
     flex-direction: column;
 }
@@ -107,37 +123,31 @@ main section:nth-of-type(2) h3{
     font-family: "Foam serif", serif;
     font-weight: 100;
     font-size: 2rem;
-    order: 3;
+    order: 4;
     margin: 0;
-    padding-top: 1.2rem;
-    padding-right: 1rem;
+    padding-top: .8rem;
+    padding-right: .9rem;
     line-height: 120%;
 }
 
-main section:nth-of-type(2) p {
+main section:nth-of-type(2) p:nth-of-type(1) {
     order: 2;
-    display: inline-block;
-    padding-left: 1rem;
-    font-size: .9rem;
-}
-
-main section:nth-of-type(2) p::after {
-    content:"";
-    position: absolute;
-    z-index: 0;
-    left: 1.2rem;
-    transform: translateY(-.2rem);
     border-style: solid;
     border-radius: 5rem;
     border-width: 1px;
-    width: 7rem;
-    height: 1.7rem;
+    padding: .1rem .6rem .25rem;
+    width: max-content;
+
 }
 
-main section:nth-of-type(2) p time{
+
+main section:nth-of-type(2) p:nth-of-type(2) {
+    order: 3;
     position: relative;
-    left: 1.5rem;
-    top: 1.2rem;
+    left: 7.2rem;
+    top: -1.5rem;
+    height: 0;
+    margin: 0;
 }
 
 main section:nth-of-type(2) img{
@@ -145,25 +155,148 @@ main section:nth-of-type(2) img{
 }
 
 main section:nth-of-type(2) a{
-    order: 4;
+    order: 5;
     text-align: center;
     text-decoration: none;
     border-style: solid;
     padding: .8rem;
     margin-top: 1.2rem;
-    margin-right: 1.2rem;
+    margin-right: .9rem;
     margin-bottom: 1.2rem;
     color: var(--color-text-second);
     background-color: var(--color-background-second);
+    transition: 0.3s;
 }
 
+main section:nth-of-type(2) a:hover {
+    color: var(--color-text-main);
+    background-color: var(--color-background-main);
+}
 
 /*************/
 /* section 3 */
 /*************/
 
 main section:nth-of-type(3) {
-    
+    margin: 0 .9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(3) h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 3rem 0 0 0;
+}
+
+main section:nth-of-type(3) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    list-style: none;
+    padding: 0;
+}
+
+main section:nth-of-type(3) li:nth-of-type(-n+2) {
+    margin-left: 20%;
+}
+
+main section:nth-of-type(3) li:nth-of-type(n+3) {
+    margin-left: 30%;
+}
+
+
+main section:nth-of-type(3) ul a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--color-text-main);
+}
+
+main section:nth-of-type(3) li a:hover {
+    color: var(--color-text-hover);
+}
+
+main section:nth-of-type(3) li a:hover p:nth-of-type(1) {
+    color: var(--color-text-hover);
+    background-color: var(--color-background-main);
+}
+
+main section:nth-of-type(3) h3 {
+    order: 3;
+    margin: 0;
+    font-weight: 100;
+}
+
+main section:nth-of-type(3) li:nth-of-type(1) h3 {
+    font-style: italic;
+    font-weight: 100;
+}
+
+main section:nth-of-type(3) p:nth-of-type(1) {
+    order: 2;
+    border-style: solid;
+    border-radius: 5rem;
+    border-width: 1px;
+    padding: .1rem .6rem .25rem;
+    width: max-content;
+    margin: .1frem 0;
+    font-size: .8rem;
+}
+
+main section:nth-of-type(3) li:nth-of-type(n+3) p:nth-of-type(1) {
+   background-color: black;
+   color: var(--color-text-second);
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) {
+    order: 4;
+    margin: 0;
+    font-size: .9rem;
+}
+
+main section:nth-of-type(3) img {
+    order: 1;
+}
+
+main section:nth-of-type(3) > a{
+    display: inline-flex;
+    align-items: center; 
+    gap: 1rem;          
+    text-decoration: none;
+    color: var(--color-text-main);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+main section:nth-of-type(3) a svg {
+    width: 4rem;            
+    height: 1.5em;
+    overflow: visible;
+    transform: translateY(0.09rem);
+} 
+
+main section:nth-of-type(3) a svg line {
+    transform-origin: left center;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+main section:nth-of-type(3) a svg path {
+    transition: transform 0.3s ease;
+}
+
+
+main section:nth-of-type(3) a:hover{
+    color: var(--color-text-hover);
+}
+
+main section:nth-of-type(3) a:hover svg line{
+    transform: scaleX(1.5);
+}
+
+main section:nth-of-type(3) a:hover svg path{
+    transform: translateX(1.5rem);
 }
 
 

@@ -205,17 +205,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Quincy      | Beyzanur         | Quinten    | Ilias        | Zakaria  |
   | ---         | ---              | ---        | ---          | ---       |
   | Hamburger menu timing  | hamburger | tweede ul aanspreken  | divss    |      |
-  | wanneer span | margin 0 | streepjes bij see more| ... |...           |
+  | ::before positioneren | margin 0 | streepjes bij see more| ... |...           |
   | tijdens scrollen kleur veranderen           | search bar      | Figcaptions          | ...              | ...           |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - open met delay en duration en close zonder delay, animato to interpolate-size: allow-keywords, hight 0 niet max hight.
+  - sup voor cijfers collectie
 
 </details>
 
