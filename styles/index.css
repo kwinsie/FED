@@ -13,19 +13,19 @@ main {
 /*************/
 
 main section:nth-of-type(1) {
-    margin-left: .8rem;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: .8rem;
 }
 
 main section:nth-of-type(1) h1 {
-    font-family: "Foam serif", serif;
-    font-weight: 100;
-    color: var(--color-text-main);
-    font-size: min(2.25rem, 9.6vw);
-    line-height: 100%;
     grid-column-start: 1;
     grid-column-end: 4;
+    font-family: "Foam serif", serif;
+    font-size: min(2.25rem, 9.6vw);
+    font-weight: 100;
+    line-height: 100%;
+    color: var(--color-text-main);
 }
 
 main section:nth-of-type(1) video {
@@ -37,60 +37,60 @@ main section:nth-of-type(1) video {
 }
 
 main section:nth-of-type(1) button {
+    z-index: 50;
+    justify-self: right;
+    align-self: end;
     grid-column-start:3 ;
     grid-row-start: 1;
-    height: 2.5rem;
     width: 2.5rem;
-    align-self: end;
-    justify-self: right;
+    height: 2.5rem;
     margin: 1rem;
-    border-radius: 0;
     border-width: 1px;
-    z-index: 50;
+    border-radius: 0;
 }
 
 main section:nth-of-type(1) button svg {
-    height: 1rem;
     width: 1rem;
+    height: 1rem;
     line-height: 1px;
 }
 
 main section:nth-of-type(1) p {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
     position: relative;
     top: -1em;
     left: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
 }
 
 main section:nth-of-type(1) p::before {
-    content: " ";
     position: absolute;
+    top: .4rem;
+    left: -1rem;
     width: .4em;
     height: .4em;
-    border-radius: 20px;
-    border-width: 1px;
+    content: " ";
     background-color: var(--color-foam-open);
-    left: -1rem;
-    top: .4rem;
+    border-width: 1px;
+    border-radius: 20px;
 }
 
 main section:nth-of-type(1) a {
+    justify-self: start;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
-    justify-self: start;
+    width: 10rem;
+    padding: .8rem;
     font-size: .9rem;
     text-align: center;
     text-decoration: none;
-    width: 10rem;
-    padding: .8rem;
     color: var(--color-text-second);
     background-color: var(--color-background-second);
+    border-width: 1px;
     border-style: solid;
     border-color: var(--color-background-second);
-    border-width: 1px;
     transition: 0.3s;
     
 }
@@ -102,8 +102,8 @@ main section:nth-of-type(1) a:hover {
 }
 
 main section:nth-of-type(1) a::selection {
-	background-color: var(--color-background-main); 
 	color: var(--color-text-main);    
+	background-color: var(--color-background-main); 
   }
 
 /*************/
@@ -111,40 +111,40 @@ main section:nth-of-type(1) a::selection {
 /*************/
 
 main section:nth-of-type(2) {
-    background-color: var(--color-background-second);
-    color: var(--color-text-second);
-    margin-top: 2rem;
-    padding-left: .9rem;
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
+    padding-left: .9rem;
+    color: var(--color-text-second);
+    background-color: var(--color-background-second);
 }
 
 main section:nth-of-type(2) h3{
-    font-family: "Foam serif", serif;
-    font-weight: 100;
-    font-size: 2rem;
     order: 4;
     margin: 0;
     padding-top: .8rem;
     padding-right: .9rem;
+    font-family: "Foam serif", serif;
+    font-size: 2rem;
+    font-weight: 100;
     line-height: 120%;
 }
 
 main section:nth-of-type(2) p:nth-of-type(1) {
     order: 2;
+    width: max-content;
+    padding: .1rem .6rem .25rem;
+    border-width: 1px;
     border-style: solid;
     border-radius: 5rem;
-    border-width: 1px;
-    padding: .1rem .6rem .25rem;
-    width: max-content;
 }
 
 
 main section:nth-of-type(2) p:nth-of-type(2) {
-    order: 3;
     position: relative;
-    left: 7.2rem;
     top: -1.5rem;
+    left: 7.2rem;
+    order: 3;
     height: 0;
     margin: 0;
 }
@@ -155,16 +155,16 @@ main section:nth-of-type(2) img{
 
 main section:nth-of-type(2) a{
     order: 5;
-    text-align: center;
-    text-decoration: none;
-    border-style: solid;
-    border-width: 1px;
-    padding: .8rem;
     margin-top: 1.2rem;
     margin-right: .9rem;
     margin-bottom: 1.2rem;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
     color: var(--color-text-second);
     background-color: var(--color-background-second);
+    border-width: 1px;
+    border-style: solid;
     transition: 0.3s;
 }
 
@@ -178,23 +178,23 @@ main section:nth-of-type(2) a:hover {
 /*************/
 
 main section:nth-of-type(3) {
-    margin: 0 .9rem;
     display: flex;
     flex-direction: column;
+    margin: 0 .9rem;
 }
 
 main section:nth-of-type(3) h2 {
+    margin: 3rem 0 0 0;
     font-size: 2rem;
     font-weight: 100;
-    margin: 3rem 0 0 0;
 }
 
 main section:nth-of-type(3) ul {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 main section:nth-of-type(3) li:nth-of-type(-n+2) {
@@ -239,18 +239,18 @@ main section:nth-of-type(3) li:nth-of-type(1) h3 {
 
 main section:nth-of-type(3) p:nth-of-type(1) {
     order: 2;
-    border-style: solid;
-    border-radius: 5rem;
-    border-width: 1px;
-    padding: .1rem .6rem .25rem;
     width: max-content;
     margin: .5rem 0;
+    padding: .1rem .6rem .25rem;
     font-size: .8rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5rem;
 }
 
 main section:nth-of-type(3) li:nth-of-type(n+3) p:nth-of-type(1) {
-   background-color: black;
    color: var(--color-text-second);
+   background-color: black;
    transition:0.3s ease;
 }
 
@@ -268,10 +268,10 @@ main section:nth-of-type(3) > a{
     display: inline-flex;
     align-items: center; 
     gap: 1rem;          
+    margin-top: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--color-text-main);
-    font-size: 1.2rem;
-    margin-top: 1rem;
 }
 
 main section:nth-of-type(3) a svg {
@@ -282,9 +282,9 @@ main section:nth-of-type(3) a svg {
 } 
 
 main section:nth-of-type(3) a svg line {
-    transform-origin: left center;
-    transform: scaleX(1);
     transition: transform 0.3s ease;
+    transform: scaleX(1);
+    transform-origin: left center;
 }
 
 main section:nth-of-type(3) a svg path {
@@ -316,18 +316,18 @@ main section:nth-of-type(4) {
 }
 
 main section:nth-of-type(4) h2 {
+    margin: 5rem 0 1rem 0;
     font-size: 2rem;
     font-weight: 100;
-    margin: 5rem 0 1rem 0;
 }
 
 main section:nth-of-type(4) h3 {
     display: flex;
     flex-direction: column;
     order: 4;
+    margin: 0 .9rem 0 0;
     font-size: 2rem;
     font-weight: 500;
-    margin: 0 .9rem 0 0;
 }
 
 main section:nth-of-type(4) h3 span:nth-of-type(2){
@@ -337,12 +337,12 @@ main section:nth-of-type(4) h3 span:nth-of-type(2){
 
 main section:nth-of-type(4) p {
     order: 3;
-    border-style: solid;
-    border-radius: 5rem;
-    border-width: 1px;
-    padding: .1rem .6rem .25rem;
     width: max-content;
     margin: .5rem 0;
+    padding: .1rem .6rem .25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5rem;
 }
 
 main section:nth-of-type(4) img {
@@ -351,16 +351,16 @@ main section:nth-of-type(4) img {
 
 main section:nth-of-type(4) a {
     order: 5;
-    text-align: center;
-    text-decoration: none;
-    border-style: solid;
-    border-width: 1px;
-    padding: .8rem;
     margin-top: 1.2rem;
     margin-right: .9rem;
     margin-bottom: 5rem;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
     color: var(--color-text-main);
     background-color: var(--color-background-main);
+    border-width: 1px;
+    border-style: solid;
     transition: 0.3s;
 }
 
@@ -377,37 +377,37 @@ main section:nth-of-type(4) a:hover {
 main section:nth-of-type(5) {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-background-second);
-    color: var(--color-text-second);
     padding-bottom: 2rem;
+    color: var(--color-text-second);
+    background-color: var(--color-background-second);
 }
 
 main section:nth-of-type(5) h2 {
     order: 1;
-    font-weight: 500;
-    font-size: 2.3rem;
-    margin: 1rem .9rem;
-    line-height: 2.4rem;
     max-width: 17rem;
+    margin: 1rem .9rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 2.4rem;
 }
 
 main section:nth-of-type(5) p {
     order: 3;
-    margin: 1.5rem .9rem;
     max-width: 17rem;
+    margin: 1.5rem .9rem;
     line-height: 1.4rem;
 }
 
 main section:nth-of-type(5) a {
     order: 4;
+    margin: .5rem .9rem;
+    padding: .8rem;
     text-align: center;
     text-decoration: none;
-    border-style: solid;
-    border-width: 1px;
-    padding: .8rem;
-    margin: .5rem .9rem;
     color: var(--color-text-second);
     background-color: var(--color-background-second);
+    border-width: 1px;
+    border-style: solid;
     transition: 0.3s;
 }
 
@@ -434,11 +434,11 @@ main section:nth-of-type(6) {
 
 main section:nth-of-type(6) h2{
     order: 1;
+    max-width: 20rem;
+    margin-bottom: 4rem;
     font-size: 2.5rem;
     font-weight: 200;
     line-height: 2.5rem;
-    max-width: 20rem;
-    margin-bottom: 4rem;
 }
 
 main section:nth-of-type(6) p:nth-of-type(1){
@@ -448,30 +448,30 @@ main section:nth-of-type(6) p:nth-of-type(1){
 
 main section:nth-of-type(6) p:nth-of-type(2){
     order: 5;
+    max-width: 20rem;
+    margin: 4rem 0 2rem 0;
     font-size: 2.5rem;
     font-weight: 200;
     line-height: 2.5rem;
-    max-width: 20rem;
     text-align: right;
-    margin: 4rem 0 2rem 0;
 }
 
 main section:nth-of-type(6) a:nth-of-type(-n+2) {
     order: 3;
-    color: var(--color-text-main);
     line-height: 1.5rem;
+    color: var(--color-text-main);
 }
 
 main section:nth-of-type(6) a:nth-of-type(3) {
     order: 4;
+    margin: 1rem 0;
+    padding: .8rem;
     text-align: center;
     text-decoration: none;
-    border-style: solid;
-    border-width: 1px;
-    padding: .8rem;
-    margin: 1rem 0;
     color: var(--color-text-main);
     background-color: var(--color-background-third);
+    border-width: 1px;
+    border-style: solid;
     transition: 0.3s;
 }
 
