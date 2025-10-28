@@ -79,6 +79,7 @@ html, body {
 
 	--color-background-main:#fff;
 	--color-background-second:#000;
+	--color-background-third: #FBCB00;
 	--color-background-nav:#E30614;
 
 	/* transitions */
@@ -98,7 +99,8 @@ html, body {
 		--color-border-black: #f1f1f1; 
 
 		--color-background-main: #000000; 
-		--color-background-second: #252525; 
+		--color-background-second: #252525;
+		--color-background-third: #e9a803; 
 		--color-background-nav: #940e0e; 
 	}
 }
@@ -401,14 +403,6 @@ header nav > a:hover {
 	transition: .3s;
 }
 
-/* Ik vind het lelijk als dit aanstaat maar ook als het uitstaat */
-/* header nav a:hover sup,
-header nav a:hover svg{
-	transform: skew(15deg);
-	transition: transform 0.1s ease;
-	transform-origin: bottom center;
-} */
-
 /* 196 naast collection */
 header nav sup {
 	display: inline-block;
@@ -467,10 +461,6 @@ header search {
 	max-height: 0;
 	transition: max-height ease .4s;
 	z-index: 998; 
-}
-
-header input:focus {
-	
 }
 
 search.is-visible {
