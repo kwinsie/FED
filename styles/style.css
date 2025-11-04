@@ -70,6 +70,7 @@ html, body {
 	/* colors */
 	--color-text-main:#000;
 	--color-text-second:#fff;
+	--color-text-gray:#5e5e5e; 
 	--color-text-hover:#E30614;
 
 	--color-foam-open: #96C31D;
@@ -91,6 +92,7 @@ html, body {
 	:root {
 		--color-text-main: #fefefe;
 		--color-text-second: #fefefe;
+		--color-text-gray:#a2a1a1; 
 		--color-text-hover:#E30614;
 
 		--color-foam-open: #96C31D;
@@ -505,58 +507,6 @@ header form button {
 	height: 2rem;
 	background: none;
 	border: none;
-}
-
-
-/*********************/
-/* header second nav */
-/*********************/
-
-header > :nth-child(n+6) {
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 100%;
-	order: 6;
-}
-
-header nav:nth-of-type(2) {
-	position: relative;
-	z-index: 997;
-	overflow: visible;
-}
-
-header nav:nth-of-type(2) ul {
-	display: grid;
-	grid-template-columns: 30% 20% 30% 20%;
-	padding-top: .5rem;
-	padding-right: 1px;
-	padding-left: 1px;
-}
-
-header nav:nth-of-type(2) li {
-	padding-top: .7rem;
-	padding-bottom: .7rem;
-	text-align: center;
-	background-color: var(--color-background-main);
-	outline: 1px solid var(--color-border-gray);
-}
-
-header nav:nth-of-type(2) a {
-	display: flex;
-	justify-self: center;
-	align-self: center;
-	font-size: .8rem;
-	color: var(--color-text-main);
-}
-
-header nav:nth-of-type(2) li:hover { 
-	z-index: 3;
-	outline-color: var(--color-border-black);
-	transform: none;
-}
-
-header nav:nth-of-type(2) a:hover {
-	transform: none;
 }
 
 /**********/

@@ -1,0 +1,306 @@
+/********/
+/* main */
+/********/
+
+main {
+    padding-top: 7rem;
+}
+
+h2 {
+    font-family: "Foam serif",serif;
+    font-size: 2.4rem;
+    font-weight: 100;
+    margin: .9rem;
+    line-height: .95em;
+    letter-spacing: -0.03em;
+}
+
+/*******************************/
+/* header second nav collection*/
+/*******************************/
+
+header > :nth-child(n+6) {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;
+	order: 6;
+}
+
+header nav:nth-of-type(2) {
+	position: relative;
+	z-index: 997;
+	overflow: visible;
+}
+
+header nav:nth-of-type(2) ul {
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    padding: 0;
+}
+
+header nav:nth-of-type(2) li {
+    width: max-content;
+    margin: .5rem 0;
+    padding: .2rem .7rem .35rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5rem;
+    border-color: var(--color-border-gray);
+    background-color: var(--color-background-main);
+    transition: 0.3s;
+}
+
+header nav:nth-of-type(2) li:hover {
+    border-radius: 0;
+    border-color: var(--color-border-black);
+}
+
+header nav:nth-of-type(2) a {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	font-size: 1rem;
+    font-weight: 100;
+	color: var(--color-text-main);
+}
+
+header nav:nth-of-type(2) li:hover { 
+	z-index: 3;
+	outline-color: var(--color-border-black);
+	transform: none;
+}
+
+header nav:nth-of-type(2) a:hover {
+	transform: none;
+}
+
+/************/
+/* section 1*/
+/************/
+
+main section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    position: relative;
+    font-family: "Foam serif", serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12vw;
+    letter-spacing: -0.03em;
+}
+
+h1 sup{
+    font-family: "Foam sans-serif",sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+}
+
+main section:nth-of-type(1) p {
+    margin: 0 .9rem ;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+main section:nth-of-type(1) search {
+    margin: 1rem .9rem 13rem;
+}
+
+main section:nth-of-type(1) input {
+    width: 100%;
+    padding: 1rem;
+}
+
+/************/
+/* section 2*/
+/************/
+
+main section:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+main section:nth-of-type(2) h2 {
+    font-family: "Foam serif",serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: .9rem;
+    padding-right: 80%;
+    line-height: .95em;
+}
+
+main section:nth-of-type(2) ul {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    scroll-behavior: smooth;
+    padding: .9rem;
+}
+
+main section:nth-of-type(2) ul::-webkit-scrollbar {
+  display: none;
+}
+
+main section:nth-of-type(2) a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;  
+    text-decoration: none;
+    color: var(--color-text-main);
+}
+
+main section:nth-of-type(2) p {
+    order: 2;
+}
+
+main section:nth-of-type(2) img {
+    order: 1;
+    width: 12.5rem;
+}
+
+/*************/
+/* section 3 */
+/*************/
+
+main section:nth-of-type(3) ul {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    scroll-behavior: smooth;
+    padding: .9rem;
+}
+
+main section:nth-of-type(3) ul a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;  
+    gap: 0;
+    text-decoration: none;
+    color: var(--color-text-main);
+}
+
+main section:nth-of-type(3) ul::-webkit-scrollbar {
+  display: none;
+}
+
+main section:nth-of-type(3) h3 {
+    order: 2;
+    font-size: .8rem;
+    font-weight: 100;
+    margin: 1rem 0 0;
+}
+
+main section:nth-of-type(3) p:nth-of-type(1) {
+    order: 3;
+    font-size: .8rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) {
+    order: 4;
+    font-size: .8rem;
+    color: var(--color-text-gray);
+    margin: 0;
+}
+
+main section:nth-of-type(3) img {
+    order: 1;
+}
+
+main section:nth-of-type(3) li:nth-of-type(1) img,
+main section:nth-of-type(3) li:nth-of-type(8) img {
+    width: 14.5rem;
+}
+
+main section:nth-of-type(3) li:nth-of-type(2) img,
+main section:nth-of-type(3) li:nth-of-type(3) img,
+main section:nth-of-type(3) li:nth-of-type(4) img {
+    width: 17.25rem;
+}
+
+main section:nth-of-type(3) li:nth-of-type(5) img {
+    width: 12.3rem;
+}
+
+main section:nth-of-type(3) li:nth-of-type(6) img {
+    width: 28.6rem;
+}
+
+main section:nth-of-type(3) li:nth-of-type(7) img {
+    width: 37.4rem;
+}
+
+main section:nth-of-type(3) > a{
+    display: inline-flex;
+    align-items: center; 
+    gap: 1rem;          
+    margin: 0 .9rem 5rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--color-text-main);
+}
+
+main section:nth-of-type(3) > a svg {
+    width: 4rem;            
+    height: 1.5em;
+    overflow: visible;
+    transform: translateY(0.09rem);
+} 
+
+main section:nth-of-type(3) > a svg line {
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+main section:nth-of-type(3) > a svg path {
+    transition: transform 0.5s ease;
+}
+
+
+main section:nth-of-type(3) > a:hover{
+    color: var(--color-text-hover);
+}
+
+main section:nth-of-type(3) > a:hover svg line{
+    transform: scaleX(1.5);
+}
+
+main section:nth-of-type(3) > a:hover svg path{
+    transform: translateX(1.5rem);
+}
+/*************/
+/* section 4 */
+/*************/
+
+main section:nth-of-type(4) ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+main section:nth-of-type(4) a {
+    display: flex;
+    text-decoration: none;
+    font-family: "Foam serif",serif;
+    font-size: 2rem;
+    color: var(--color-text-main);
+}
+
+main section:nth-of-type(4) p sup{
+    font-family: "Foam sans-serif",sans-serif;
+    font-size: 1rem;
+}
+
+main section:nth-of-type(4) a img {
+    width: auto;
+    height: 2rem;
+}
