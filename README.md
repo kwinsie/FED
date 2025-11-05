@@ -42,8 +42,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Homepage.jpeg" width="375px" alt="Beginscherm op mobiel">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Plan je bezoek
-  <img src="readme-images/Plan_je_bezoek.jpeg" width="375px" alt="Plan je bezoek scherm op mobiel">
+  collection
+  <img src="readme-images/Collection.jpeg" width="375px" alt="Collection op mobiel">
  
 </details>
 
@@ -74,13 +74,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Index Breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### hamburger menu: 
+  <img src="readme-images/Hamburger breakdown.jpg" width="375px" alt="breakdown van mijn hamburger menu">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### search: 
+  <img src="readme-images/Search Breakdown.jpg" width="375px" alt="breakdown van mijn search">
 
 </details>
 
@@ -180,7 +180,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - de labels zijn erg duidelijk
+  - de focus state matched nog niet helemaal 
+  - de H1, H2, H3 staan goed
+  _ er is veel verbeterd in vergelijking met de eerste test
 
 </details>
 
@@ -227,19 +230,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Site 1.jpeg" width="375px" alt="">
+  <img src="readme-images/Site 2.jpeg" width="375px" alt="">
+  <img src="readme-images/Site 3.jpeg" width="375px" alt="">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  ik heb veel nieuwe dingen geleerd, ik snap nu echt een stuk beter wat ik doe met code, ik vind vooral de supjes erg leuk. ook heb ik voor het eerst responsive gecodeerd, dat ging ook erg goed
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/Supjes geleerd.jpeg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  ik wilde Intersection observer gebruiken, maar dat is echt niet gelukt helaas :(.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Intersection Observer is niet gelukt.jpeg" width="375px" alt="bummer">
 </details>
 
 
@@ -255,8 +260,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.a11yproject.com/posts/how-to-hide-content/
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries_for_accessibility
+  3. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert#accessibility_concerns
 
 </details>

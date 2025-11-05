@@ -88,12 +88,3 @@ function toggleVideo() {
         pauseButton.classList.add("visually-hidden");
     }
 }
-
-
-//**********************//
-// Intersection Observer//
-//**********************//
-
-
-
-//Bron: https://blog.webdevsimplified.com/2022-01/intersection-observer/
