@@ -88,3 +88,21 @@ function toggleVideo() {
         pauseButton.classList.add("visually-hidden");
     }
 }
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const intersecting = entry.isIntersecting
+    const deKleur = entry.target.dataset.color
+    console.log(deKleur)
+
+    if(intersecting) {
+      document.body.classList.add(deKleur)
+    }else {
+      document.body.classList.remove(deKleur)
+    }
+    // entry.target.style.backgroundColor = intersecting ? "blue" : "orange"
+  })
+})
+
+observer.observe(document.querySelector("section:nth-of-type(5)"))
+observer.observe(document.querySelector("section:nth-of-type(6)"))
